@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <!-- <script src="https://unpkg.com/three@0.137.4/examples/js/loaders/GLTFLoader.js"></script> -->
+    <script src="https://unpkg.com/three@0.137.4/examples/js/controls/OrbitControls.js"></script>
+    <!-- <script src="https://unpkg.com/@pixiv/three-vrm@0.6.10/lib/three-vrm.js"></script> -->
+    <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script> 
+    <title>Gender Re-morphia</title>
+</head>
+<body>
+    
+<a-scene>
+</a-assets> 
+
+ <img id="floor" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/233187/tile-texture.jpg" crossorigin="true">
+
+<img id="wall2"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5XhvuhzRInlffT0Whu0kUBJcc0DY34L8lj5YzDMM9LbdatF1DTHxWPZy3GtsbLV4hnQg&usqp=CAU" crossorigin="true">
+
+<img id="wall" src="data:image/jpeg;base64,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" crossorigin="true">
+
+</a-assets>
+
+
+  <a-plane blue position="0 0 -11" rotation="0 0" width="25px" height="10px" color="#aaa" src="#wall" ></a-plane>
+
+   <a-plane position="8 0 -2.5" rotation="0 -90" width="25" height="10px" color="#aaa" src="#wall2"></a-plane>
+
+   <a-plane rotation="-90 0 0" position="2 -1 -2" color="#aaa" width="30" height="25" src="#floor"></a-plane>
+  
+  <a-plane tabletsquare position="0.5 0.53 -2.7" rotation="-90 45" width="0.45px" height="0.45px" color="#F5F5F5"></a-plane>
+  
+ <a-box length="0.3px" width="0.5px" depth="0.5" position="0.5 0 -2.7" rotation="0 45 0" color="#1B5E20" >
+      </a-box>
+  
+  <a-sky color="#212121" src="#wall"></a-sky>
+</a-scene>
+</body>
+</html>
